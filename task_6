@@ -1,0 +1,7 @@
+a = float(input("Старт: "))
+b = int(input("Финал: "))
+days = 1
+while a < b:
+    days += 1
+    a *= 2
+print(days)
