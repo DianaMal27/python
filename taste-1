@@ -1,0 +1,5 @@
+print("Hy!")
+print(2 + 2)
+print(8>5)
+a = "cat"
+b = "dog"
