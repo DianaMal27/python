@@ -1,0 +1,16 @@
+my_list = [3, 2.6, "world", False]
+print(my_list[0])
+print(my_list[1])
+print(my_list[2])
+print(my_list[3])
+
+print(type(my_list[0]))
+print(type(my_list[1]))
+print(type(my_list[2]))
+print(type(my_list[3]))
+
+
+my_list = [1, 2.2, True, None, 'hjk', [2,3], range(11)]
+
+for i, val in enumerate(my_list, 1):
+    print(f"{i}) {val} - {type(val)}")
