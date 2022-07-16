@@ -1,0 +1,7 @@
+def my_pow_fun(x, y):
+    try:
+        res = x ** y
+    except TypeError:
+        return "Введите число с запятой и отрицательное число"
+    return res
+print(my_pow_fun(6.5, 4))
