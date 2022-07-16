@@ -1,0 +1,8 @@
+def int_func():
+    for word in input("Введите слова через пробел латиницей:\n").split():
+        chars = 0
+        for char in word:
+            if 25 <= ord(char) <= 150:
+                chars += 1
+        print(word.title() if chars == len(word) else f"{word} - только маленькие буквы")
+int_func()
