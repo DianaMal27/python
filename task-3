@@ -1,0 +1,4 @@
+with open('L5T3', 'r', encoding='utf-8') as f:
+    a_dict = {line.split()[0]: float(line.split()[1]) for line in f}
+    print(f'Меньше 20 тысяч получают:  {[i[0] for i in a_dict.items() if i[1] < 20000]}\n'
+          f'Средняя величина дохода = {round(sum(a_dict.values()) / len(a_dict), 3)}')
