@@ -1,0 +1,4 @@
+with open ('L5T2', 'r', encoding='utf-8') as f:
+    a = [f'{count}.{line.strip()} - {len(line.split())} слов'
+         for count, line in enumerate(f, 1)]
+    print(*a, f"всего строк - {len(a)}.", sep="\n")

@@ -1,0 +1,4 @@
+rus_dict = {"one": "один", "two": "два", "Three": "три", "Four":"четыре"}
+with open('L5T4', 'w', encoding='utf-8') as new_f:
+    with open('L5T4', encoding='utf-8') as my_f:
+        new_f.writelines([line.replace(line.split()[0], rus_dict.get(line.split()[0])) for line in my_f])

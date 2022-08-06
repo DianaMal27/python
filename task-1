@@ -1,0 +1,10 @@
+with open('taks-1', 'w', encoding='utf-8') as f:
+    while True:
+        s = input('Ввести новую строчку или пустую строчку: ')
+        if not s:
+            break
+        #f.write(f"{s}\n")
+        print(s, file=f)   # почему нельзя поставить второй параметр просто f?
+        
+        
+   
