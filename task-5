@@ -1,0 +1,5 @@
+from random import randint
+with open("L5T5", "w" ,encoding="utf-8") as f:
+    a = [randint(1, 100) for i in range(100)]
+    f.write(" ".join(map(str, a)))
+print(f"сумма элементов - {sum(a)}")
